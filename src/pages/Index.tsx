@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Search, MapPin, Clock, Shield, Star, Download, Play, ArrowRight, Check, Car, Wrench, Smartphone, Users, Zap, Heart, Camera } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -116,7 +117,9 @@ const Index = () => {
               <a href="#features" className="text-muted-foreground hover:text-primary transition-colors">Features</a>
               <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">How it Works</a>
               <a href="#testimonials" className="text-muted-foreground hover:text-primary transition-colors">Reviews</a>
-              <Button variant="outline" size="sm">Sign In</Button>
+              <Link to="/login">
+                <Button variant="outline" size="sm">Sign In</Button>
+              </Link>
               <Button className="btn-cta">Download App</Button>
             </div>
 
