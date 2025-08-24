@@ -5,12 +5,13 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
-// Import images
-import heroImage from '@/assets/hero-garage-scene.jpg';
-import aiFeatureImage from '@/assets/ai-search-feature.jpg';
-import mobileAppImage from '@/assets/mobile-app-showcase.jpg';
+// Temporary placeholder images while debugging
+const heroImage = "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&h=800&fit=crop";
+const aiFeatureImage = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop";
+const mobileAppImage = "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=600&fit=crop";
 
 const Index = () => {
+  console.log('Index component is rendering');
   const [searchQuery, setSearchQuery] = useState('');
 
   const features = [
